@@ -4,6 +4,7 @@ object PreviewFrame: TPreviewFrame
   Width = 380
   Height = 408
   TabOrder = 0
+  PixelsPerInch = 96
   object SpTBXTitleBar1: TSpTBXTitleBar
     Left = 15
     Top = 13
@@ -12,13 +13,12 @@ object PreviewFrame: TPreviewFrame
     Caption = 'SpTBXTitleBar1'
     Align = alCustom
     object SpTBXTabControl1: TSpTBXTabControl
-      Left = 6
-      Top = 79
-      Width = 342
-      Height = 274
+      Left = 4
+      Top = 77
+      Width = 346
+      Height = 278
       Align = alClient
       ActiveTabIndex = 0
-      ExplicitHeight = 276
       HiddenItems = <>
       object SpTBXTabItem1: TSpTBXTabItem
         Caption = 'Controls'
@@ -30,23 +30,21 @@ object PreviewFrame: TPreviewFrame
       object SpTBXTabSheet2: TSpTBXTabSheet
         Left = 0
         Top = 25
-        Width = 342
-        Height = 249
+        Width = 346
+        Height = 253
         Caption = 'Panels'
         ImageIndex = -1
-        ExplicitHeight = 251
         TabItem = 'SpTBXTabItem2'
         object SpTBXMultiDock1: TSpTBXMultiDock
           Left = 2
-          Top = 169
-          Width = 336
+          Top = 173
+          Width = 340
           Height = 76
           Position = dpxBottom
-          ExplicitTop = 171
           object SpTBXDockablePanel1: TSpTBXDockablePanel
             Left = 0
             Top = 0
-            Width = 336
+            Width = 340
             Height = 76
             Caption = 'Dockable Panel'
             DockMode = dmCannotFloatOrChangeDocks
@@ -57,24 +55,22 @@ object PreviewFrame: TPreviewFrame
         end
         object SpTBXSplitter1: TSpTBXSplitter
           Left = 2
-          Top = 164
-          Width = 336
+          Top = 168
+          Width = 340
           Height = 5
           Cursor = crSizeNS
           Align = alBottom
           ParentColor = False
-          ExplicitTop = 166
         end
         object SpTBXPanel1: TSpTBXPanel
           Left = 2
           Top = 0
-          Width = 336
-          Height = 164
+          Width = 340
+          Height = 168
           Caption = 'SpTBXPanel1'
           Align = alClient
           TabOrder = 2
           Borders = False
-          ExplicitHeight = 166
           object SpTBXGroupBox4: TSpTBXGroupBox
             Left = 16
             Top = 8
@@ -105,11 +101,10 @@ object PreviewFrame: TPreviewFrame
       object SpTBXTabSheet1: TSpTBXTabSheet
         Left = 0
         Top = 25
-        Width = 342
-        Height = 249
+        Width = 346
+        Height = 253
         Caption = 'Controls'
         ImageIndex = -1
-        ExplicitHeight = 251
         TabItem = 'SpTBXTabItem1'
         object SpTBXGroupBox1: TSpTBXGroupBox
           Left = 6
@@ -148,8 +143,8 @@ object PreviewFrame: TPreviewFrame
           object SpTBXCheckBox1: TSpTBXCheckBox
             Left = 130
             Top = 21
-            Width = 61
-            Height = 25
+            Width = 64
+            Height = 23
             Caption = 'Normal'
             TabOrder = 3
             OnClick = SpTBXCheckBox1Click
@@ -157,8 +152,8 @@ object PreviewFrame: TPreviewFrame
           object SpTBXCheckBox2: TSpTBXCheckBox
             Left = 130
             Top = 53
-            Width = 69
-            Height = 25
+            Width = 70
+            Height = 23
             Caption = 'Checked'
             TabOrder = 4
             OnClick = SpTBXCheckBox1Click
@@ -168,8 +163,8 @@ object PreviewFrame: TPreviewFrame
           object SpTBXCheckBox3: TSpTBXCheckBox
             Left = 130
             Top = 85
-            Width = 68
-            Height = 25
+            Width = 69
+            Height = 23
             Caption = 'Disabled'
             Enabled = False
             TabOrder = 5
@@ -177,8 +172,8 @@ object PreviewFrame: TPreviewFrame
           object SpTBXRadioButton1: TSpTBXRadioButton
             Left = 234
             Top = 21
-            Width = 61
-            Height = 25
+            Width = 64
+            Height = 23
             Caption = 'Normal'
             TabOrder = 6
             OnClick = SpTBXRadioButton1Click
@@ -186,8 +181,8 @@ object PreviewFrame: TPreviewFrame
           object SpTBXRadioButton2: TSpTBXRadioButton
             Left = 234
             Top = 53
-            Width = 69
-            Height = 25
+            Width = 70
+            Height = 23
             Caption = 'Checked'
             TabOrder = 7
             TabStop = True
@@ -197,8 +192,8 @@ object PreviewFrame: TPreviewFrame
           object SpTBXRadioButton3: TSpTBXRadioButton
             Left = 234
             Top = 85
-            Width = 68
-            Height = 25
+            Width = 69
+            Height = 23
             Caption = 'Disabled'
             Enabled = False
             TabOrder = 8
@@ -216,7 +211,7 @@ object PreviewFrame: TPreviewFrame
             Left = 10
             Top = 17
             Width = 153
-            Height = 21
+            Height = 23
             ReadOnly = True
             TabOrder = 0
             Text = 'Edit'
@@ -225,15 +220,15 @@ object PreviewFrame: TPreviewFrame
             Left = 10
             Top = 45
             Width = 153
-            Height = 21
+            Height = 23
+            AutoDropDownWidth = True
             Style = csDropDownList
-            ItemHeight = 13
+            ItemHeight = 15
             ItemIndex = 0
             TabOrder = 1
             Text = 'ComboBox'
             Items.Strings = (
               'ComboBox')
-            AutoDropDownWidth = True
           end
           object SpTBXPanel2: TSpTBXPanel
             Left = 10
@@ -319,9 +314,9 @@ object PreviewFrame: TPreviewFrame
       end
     end
     object SpTBXDock1: TSpTBXDock
-      Left = 6
-      Top = 28
-      Width = 342
+      Left = 4
+      Top = 26
+      Width = 346
       Height = 51
       object SpTBXToolbar1: TSpTBXToolbar
         Left = 0
@@ -400,12 +395,11 @@ object PreviewFrame: TPreviewFrame
       end
     end
     object SpTBXStatusBar2: TSpTBXStatusBar
-      Left = 6
-      Top = 353
-      Width = 342
+      Left = 4
+      Top = 355
+      Width = 346
       Height = 25
       Enabled = False
-      ExplicitTop = 355
       object SpTBXItem9: TSpTBXItem
         Caption = 'Status Panel'
       end

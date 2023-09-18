@@ -10,10 +10,8 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   Menu = MainMenu1
-  OldCreateOrder = False
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
   TextHeight = 13
   object pnlMenu: TPanel
     Left = 0
@@ -23,8 +21,8 @@ object Form1: TForm1
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitTop = 29
-    ExplicitHeight = 557
+    ExplicitWidth = 862
+    ExplicitHeight = 553
   end
   object StatusBar1: TStatusBar
     Left = 0
@@ -32,6 +30,8 @@ object Form1: TForm1
     Width = 866
     Height = 19
     Panels = <>
+    ExplicitTop = 585
+    ExplicitWidth = 862
   end
   object pnlEditor: TPanel
     Left = 0
@@ -41,8 +41,8 @@ object Form1: TForm1
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitTop = 29
-    ExplicitHeight = 557
+    ExplicitWidth = 862
+    ExplicitHeight = 553
     object Splitter1: TSplitter
       Left = 233
       Top = 0
@@ -59,7 +59,7 @@ object Form1: TForm1
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 557
+      ExplicitHeight = 553
       object CategoryButtons1: TCategoryButtons
         Left = 0
         Top = 21
@@ -76,13 +76,13 @@ object Form1: TForm1
         GradientDirection = gdVertical
         ParentDoubleBuffered = False
         PopupMenu = PopupMenu1
-        RegularButtonColor = 15660791
-        SelectedButtonColor = 13361893
+        RegularButtonColor = clWhite
+        SelectedButtonColor = 15132390
         TabOrder = 0
         OnContextPopup = CategoryButtons1ContextPopup
         OnDrawButton = CategoryButtons1DrawButton
         OnSelectedItemChange = CategoryButtons1SelectedItemChange
-        ExplicitHeight = 536
+        ExplicitHeight = 532
       end
       object lblElementsTitle: TSpTBXLabel
         Left = 0
@@ -110,7 +110,8 @@ object Form1: TForm1
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 557
+      ExplicitWidth = 626
+      ExplicitHeight = 553
       object Splitter2: TSplitter
         Left = 257
         Top = 0
@@ -126,7 +127,8 @@ object Form1: TForm1
         BevelOuter = bvNone
         TabOrder = 1
         OnAlignPosition = pnlPreviewAlignPosition
-        ExplicitHeight = 557
+        ExplicitWidth = 366
+        ExplicitHeight = 553
         object lblPreviewTitle: TSpTBXLabel
           Left = 0
           Top = 0
@@ -143,6 +145,7 @@ object Form1: TForm1
           Font.Style = [fsBold]
           ParentFont = False
           OnDraw = edlblPropertiesDraw
+          ExplicitWidth = 366
         end
       end
       object pnlProperties: TPanel
@@ -153,7 +156,7 @@ object Form1: TForm1
         Align = alLeft
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitHeight = 557
+        ExplicitHeight = 553
         object pnlPropertiesEd: TPanel
           Left = 0
           Top = 158
@@ -162,7 +165,7 @@ object Form1: TForm1
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 3
-          ExplicitHeight = 399
+          ExplicitHeight = 395
           object edSplitter2: TSplitter
             Left = 136
             Top = 0
@@ -182,7 +185,7 @@ object Form1: TForm1
             Color = clWindow
             ParentBackground = False
             TabOrder = 0
-            ExplicitHeight = 399
+            ExplicitHeight = 395
             object lblBodyTitle1: TSpTBXLabel
               Left = 0
               Top = 0
@@ -385,7 +388,7 @@ object Form1: TForm1
             Color = clWindow
             ParentBackground = False
             TabOrder = 1
-            ExplicitHeight = 399
+            ExplicitHeight = 395
             object lblBodyTitle2: TSpTBXLabel
               Left = 0
               Top = 0
@@ -827,6 +830,7 @@ object Form1: TForm1
     ParentShowHint = False
     ShowHint = True
     TabOrder = 3
+    ExplicitWidth = 862
     object ToolButton1: TToolButton
       Left = 0
       Top = 0
@@ -862,7 +866,7 @@ object Form1: TForm1
     end
   end
   object MainMenu1: TMainMenu
-    Left = 16
+    Left = 24
     Top = 280
     object mFile1: TMenuItem
       Caption = 'File'
@@ -925,17 +929,17 @@ object Form1: TForm1
   object OpenDialog1: TOpenDialog
     DefaultExt = 'skn'
     Filter = 'Skin Files (*.skn)|*.skn'
-    Left = 80
+    Left = 104
     Top = 280
   end
   object SaveDialog1: TSaveDialog
     DefaultExt = 'skn'
     Filter = 'Skin Files (*.skn)|*.skn'
-    Left = 144
+    Left = 184
     Top = 280
   end
   object ActionList1: TActionList
-    Left = 80
+    Left = 112
     Top = 352
     object aHelp: TAction
       Category = 'Help'
@@ -1019,7 +1023,7 @@ object Form1: TForm1
     end
   end
   object PopupMenu1: TPopupMenu
-    Left = 16
+    Left = 32
     Top = 352
     object smCopy1: TMenuItem
       Action = aCopy
@@ -1041,7 +1045,7 @@ object Form1: TForm1
     end
   end
   object ImageList1: TImageList
-    Left = 144
+    Left = 184
     Top = 352
     Bitmap = {
       494C010105000A00040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600

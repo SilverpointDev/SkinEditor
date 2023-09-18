@@ -1,0 +1,20 @@
+18 September 2023 - version 1.0.6
+  - Improved checkbox and radiobutton painting.
+
+18 March 2014 - version 1.0.5
+  - Added Delphi XE4 and XE5 support.
+  
+19 April 2013 - version 1.0.4
+  - Added Delphi XE3 support.
+    
+29 June 2011 - version 1.0.3
+  - Minor bug fixes.
+    
+24 April 2010 - version 1.0.2
+  - Minor bug fixes.
+   
+2 December 2009 - version 1.0.1
+  - Minor bug fixes.
+  
+13 September 2009 - version 1.0
+  - Initial release.

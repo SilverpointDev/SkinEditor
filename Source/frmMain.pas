@@ -13,8 +13,8 @@ uses
 const
   rvSkinEditorCaption = 'Silverpoint SkinEditor';
   rvSkinEditorEmptyCaption = 'Untitled - ' + rvSkinEditorCaption;
-  rvSkinEditorVersion = 'Version 1.0.5';
-  rvSkinEditorCopyright = 'Copyright (C) 2021 Robert Lee. All rights reserved.';
+  rvSkinEditorVersion = 'Version 1.0.6';
+  rvSkinEditorCopyright = 'Copyright (C) 2023 Robert Lee. All rights reserved.';
 
 type
   TForm1 = class(TForm)

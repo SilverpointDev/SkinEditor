@@ -48,6 +48,7 @@ var
   I: Integer;
   CanDrawText: Boolean;
   TextFlags: Cardinal;
+  CheckboxState: TCheckBoxState;
 begin
   B := TBitmap.Create;
   try
@@ -82,10 +83,13 @@ begin
           begin
             R.Right := R.Left + 13;
             R := SpCenterRectVert(R, 13);
-            if C = skncCheckBox then
-              ASkin.PaintMenuCheckMark(B.Canvas, R, S in [sknsChecked, sknsCheckedAndHotTrack], False, S, DPI)
+            if C = skncCheckBox then begin
+              if S in [sknsChecked, sknsCheckedAndHotTrack] then CheckboxState := cbChecked
+              else CheckboxState := cbUnchecked;
+              SpDrawXPCheckBoxGlyph(nil, B.Canvas, R, S <> sknsDisabled, CheckboxState, S in [sknsHotTrack, sknsCheckedAndHotTrack], S = sknsPushed, DPI);
+            end
             else
-              ASkin.PaintMenuRadioMark(B.Canvas, R, S in [sknsChecked, sknsCheckedAndHotTrack], S, DPI);
+              SpDrawXPRadioButtonGlyph(nil, B.Canvas, R, S <> sknsDisabled, S in [sknsChecked, sknsCheckedAndHotTrack], S in [sknsHotTrack, sknsCheckedAndHotTrack], S = sknsPushed, DPI);
             R.Left := R.Right + 4;
             R.Right := B.Width;
             TextFlags := TextFlags and not DT_CENTER;
@@ -95,12 +99,12 @@ begin
             CanDrawText := False;
             I := GetSystemMetrics(SM_CXVSCROLL) + 2;
             R := SpCenterRect(R, I, I);
-            SpDrawXPStatusBar(B.Canvas, Rect(0, 0, 0, 0), R, DPI);
+            SpDrawXPStatusBar(nil, B.Canvas, Rect(0, 0, 0, 0), R, DPI);
           end;
         skncSeparator:
           begin
             CanDrawText := False;
-            SpDrawXPMenuSeparator(B.Canvas, R, False, True, DPI);
+            SpDrawXPMenuSeparator(nil, B.Canvas, R, False, True, DPI);
           end;
         skncToolbarGrip:
           begin
@@ -122,7 +126,7 @@ begin
 
     // Draw text
     if CanDrawText then begin
-      B.Canvas.Font.Color := ASkin.GetTextColor(C, S);
+      B.Canvas.Font.Color := ASkin.GetTextColor(nil, C, S);
       SpDrawXPText(B.Canvas, SSpTBXSkinDisplayStatesString[S], R, TextFlags);
     end;
 

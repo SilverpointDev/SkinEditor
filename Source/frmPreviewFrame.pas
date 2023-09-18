@@ -209,7 +209,7 @@ begin
   if PaintStage = pstPrePaint then begin
     PaintDefault := False;
     SB := TSpTBXSpeedButton(Sender);
-    SpDrawXPHeader(ACanvas, ARect, SB.MouseInControl, SB.Pushed, CurrentPPI);
+    SpDrawXPHeader(nil, ACanvas, ARect, SB.MouseInControl, SB.Pushed, CurrentPPI);
   end;
 end;
 
